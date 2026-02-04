@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uppgift 2: Buttons</title>
   </head>
+
   <body>
     <!-- TODO: Lägg till 5 knappar, där en är korrekt och 4 är inkorrekta -->
-  </body>
+    <button id="btn1">click me1</button>
+    <button id="btn2">click me2</button>
+    <button id="btn3">click me3</button>
+    <button id="btn4">click me4</button>
+    <button id="btn5">click me5</button>
+  
 
+  
   <script>
+
     function showCorrect() {
       alert("Correct!");
     }
@@ -17,5 +25,12 @@
     function showIncorrect() {
       alert("Incorrect!");
     }
+
+    document.getElementById("btn1").addEventListener("click", showIncorrect);
+    document.getElementById("btn2").addEventListener("click", showIncorrect);  
+    document.getElementById("btn3").addEventListener("click", showCorrect);
+    document.getElementById("btn4").addEventListener("click", showIncorrect);
+    document.getElementById("btn5").addEventListener("click", showIncorrect);
   </script>
+  </body>
 </html>

@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uppgift 1: Alert</title>
   </head>
-  <body>
-    <button onclick="showAlert()">Click me for to be welcomed</button>
-  </body>
 
-  <script>
-    // TODO: Välkomna användaren med en alert när de klickar på knappen
-  </script>
+  <body>
+    <button id="welcome" addeventlistener="click">Click me for a welcome message</button>
+  </body>
+<script>
+  document.getElementById("welcome").addEventListener("click", function() {
+    alert("Welcome to the website!");
+  });
+</script>
+
 </html>
